@@ -273,6 +273,7 @@ const [commentHeight] = useState(new Animated.Value(0)); // 控制评论区切�
   const dispatch = useDispatch(); // 使用redux的方法
   const [isInputFocused, setIsInputFocused] = useState(false); // 文本框是否聚焦
   const [scrollEnableState,setScrollEnableState] = useState(true) // 控制PagerView全局页面滚动
+  const [bottomHeight,setbottomHeight] = useState(hp(8))
 
   // 文本框聚焦时
   const handleFocus = () => {
@@ -325,7 +326,7 @@ const [commentHeight] = useState(new Animated.Value(0)); // 控制评论区切�
         {/* 评论区顶部 */}
         <Pressable style={{width:'100%',flexDirection:'row',display:'flex',justifyContent:'center',alignItems:'center',height:hp(4)}}>
           <Text style={{textAlign:'center',marginTop:hp(1),height:hp(2)}}>{el.comment}条评论</Text>
-          <EvilIcons name='close' size={25} style={{left:wp(30),top:hp(1)}} onPress={() => {setVisible(false),toggleComment(),setbottomHeight(0);dispatch(decrement())}}></EvilIcons>
+          <EvilIcons name='close' size={25} style={{left:wp(30),top:hp(1)}} onPress={() => {toggleComment(),setbottomHeight(0);dispatch(decrement())}}></EvilIcons>
         </Pressable>
         
         {/* 评论区内容 */}
@@ -370,7 +371,7 @@ const [commentHeight] = useState(new Animated.Value(0)); // 控制评论区切�
           </Pressable>
 
           {/* 评论按钮 */}
-          <Pressable style={styles.commentContainer} onPress={() => {setVisible(true),setbottomHeight(0);
+          <Pressable style={styles.commentContainer} onPress={() => {setbottomHeight(0);
             dispatch(increment()),toggleComment()}}>
             <FontAwesome5 name="comment-dots" size={30} color={'white'} />
             <Text style={styles.comment}>{el.comment}</Text>

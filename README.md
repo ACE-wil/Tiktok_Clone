@@ -1,6 +1,49 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+## 首页-推荐页 效果图
+<img src="./images/Home/home_recommend.png" width="300"/>
+
+## 首页-推荐页-侧边栏组件
+<img src="./images/Home/home_drawer.png" width="300"/>
+
+## 首页-推荐页-搜索组件
+<img src="./images/Home/home_search.png" width="300"/>
+
+## 首页-推荐页-个人主页
+<img src="./images/Home/home_userIndex.png" width="300"/>
+
+## 首页-推荐页-评论区
+<img src="./images/Home/home_comment.png" width="300"/>
+
+## 首页-推荐页-点赞/收藏
+<img src="./images/Home/home_liked&collected.png" width="300"/>
+
+## 首页-推荐页-分享
+<img src="./images/Home/home_share.png" width="300"/>
+
+## 朋友页 效果图
+<img src="./images/Friend/Friend.png" width="300"/>
+
+## 消息页 效果图
+<img src="./images/Message/Message.png" width="300"/>
+
+## 个人主页 效果图
+<img src="./images/Mine/Mine_index.png" width="300"/>
+
+## 个人主页-侧边栏
+<img src="./images/Mine/Mine_index.png" width="300"/>
+
+## 个人主页-编辑资料
+<img src="./images/Mine/Mine_index.png" width="300"/>
+
+## 个人主页-添加朋友
+<img src="./images/Mine/Mine_addFriend_friend.png" width="300"/>
+<img src="./images/Mine/Mine_addFriend_newFriend.png" width="300"/>
+<img src="./images/Mine/Mine_addFriend_addFriend.png" width="300"/>
+
+## 个人主页-用户作品
+<img src="./images/Mine/Mine_userCreaction.png" width="300"/>
+
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
